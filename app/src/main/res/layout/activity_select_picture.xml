@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_bg"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="12dp"
+    tools:context=".SelectPicture">
+
+
+    <ImageView
+        android:id="@+id/ivSelectedImage"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/image_upload"
+        app:layout_constraintBottom_toTopOf="@id/analyseProgressBar"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnAnalyseImage"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="6dp"
+        android:background="@drawable/button_border"
+        android:padding="10dp"
+        android:text="ANALYSE"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="@id/guideline2"
+        app:layout_constraintRight_toRightOf="parent" />
+    <!--android:backgroundTint="#2e2d2a"
+    android:backgroundTint="#2e2d2a"-->
+
+    <Button
+        android:id="@+id/btnUploadImage"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="6dp"
+        android:background="@drawable/button_border"
+        android:padding="10dp"
+        android:text="UPLOAD"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="@id/guideline2" />
+    <!--android:backgroundTint="#d19a32"
+    android:textColor="#2e2d2a"-->
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <ProgressBar
+        android:id="@+id/analyseProgressBar"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="40dp"
+        app:layout_constraintBottom_toTopOf="@id/btnUploadImage"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <TextView
+        android:id="@+id/tvProcessingData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="PROCESSING.."
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_marginBottom="25dp"
+        android:textSize="25sp"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
