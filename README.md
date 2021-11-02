@@ -1,5 +1,5 @@
 # Profile
-Face is an android application developed in Kotlin. This application uses Deepface framework available in python to Analyze and Verify images of a person. 
+Profile is an android application developed in Kotlin. This application uses Deepface framework available in python to Analyze and Verify images of a person. 
 This application also uses FastAPI framework available in python to write server side code. 
 This application creates Base64 string of image and sends it to server over the network.
 Application uses Retrofit Library which is avaiable in Kotlin to create a restful API. 
